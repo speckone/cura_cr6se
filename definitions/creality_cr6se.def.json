@@ -21,9 +21,17 @@
                 [32, 34]
             ]
         },
-
-        "gantry_height": { "value": 25 }
-
+	"gantry_height": { "value": 25 },
+	"line_width": { "value": "machine_nozzle_size * 1.1"},
+	"z_seam_type": { "value": "'sharpest_corner'"},
+	"z_seam_corner": { "value": "'z_seam_corner_inner'"},
+	"retraction_hop_enabled": { "value": "support_enable" },
+	"retraction_combing": { "value": "'off' if retraction_hop_enabled else 'infill'"},
+	"skirt_gap": { "value": 3.0 },
+	"skirt_line_count": { "value": 1 },
+	"support_type": { "value": "'buildplate'"},
+	"meshfix_maximum_resolution": { "value": "0.25" },
+	"minimum_support_area": { "value": 5 }
     },
     "metadata": {
         "quality_definition": "creality_base",
